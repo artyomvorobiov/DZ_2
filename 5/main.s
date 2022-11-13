@@ -93,8 +93,8 @@ main:
 	jne	.L7
 	
 	mov	eax, DWORD PTR -10060[rbp]
-	sub	eax, 3
-	cmp	DWORD PTR -10068[rbp], eax ## i <= l - 4
+	sub	eax, 2
+	cmp	DWORD PTR -10068[rbp], eax ## i <= l - 3
 	jge	.L7
 	
 	cmp	DWORD PTR -10068[rbp], 0 ## (i == 0)
@@ -121,8 +121,8 @@ main:
 	cmp	al, 116
 	jne	.L7
 	
-	mov	eax, DWORD PTR -10060[rbp] ## (i == l - 4) 
-	sub	eax, 4
+	mov	eax, DWORD PTR -10060[rbp] ## (i == l - 3) 
+	sub	eax, 3
 	cmp	DWORD PTR -10068[rbp], eax
 	je	.L9
 	
@@ -149,8 +149,8 @@ main:
 	cmp	al, 105
 	jne	.L11
 	
-	mov	eax, DWORD PTR -10060[rbp] ## (i <= l - 3)
-	sub	eax, 2
+	mov	eax, DWORD PTR -10060[rbp] ## (i <= l - 2)
+	sub	eax, 1
 	cmp	DWORD PTR -10068[rbp], eax
 	jge	.L11
 	
@@ -171,8 +171,8 @@ main:
 	cmp	al, 102
 	jne	.L11
 	
-	mov	eax, DWORD PTR -10060[rbp] ## (i == l - 3)
-	sub	eax, 3
+	mov	eax, DWORD PTR -10060[rbp] ## (i == l - 2)
+	sub	eax, 2
 	cmp	DWORD PTR -10068[rbp], eax
 	je	.L13
 	
@@ -198,8 +198,8 @@ main:
 	cmp	al, 100
 	jne	.L14
 	
-	mov	eax, DWORD PTR -10060[rbp] ## (i <= l - 3)
-	sub	eax, 2
+	mov	eax, DWORD PTR -10060[rbp] ## (i <= l - 2)
+	sub	eax, 1
 	cmp	DWORD PTR -10068[rbp], eax
 	jge	.L14
 	
@@ -220,8 +220,8 @@ main:
 	cmp	al, 111
 	jne	.L14
 	
-	mov	eax, DWORD PTR -10060[rbp] ##(i == l - 3)
-	sub	eax, 3
+	mov	eax, DWORD PTR -10060[rbp] ##(i == l - 2)
+	sub	eax, 2
 	cmp	DWORD PTR -10068[rbp], eax
 	je	.L16
 	
@@ -243,8 +243,8 @@ main:
 	cmp	al, 102
 	jne	.L17
 	
-	mov	eax, DWORD PTR -10060[rbp] ## (i <= l - 4)
-	sub	eax, 3
+	mov	eax, DWORD PTR -10060[rbp] ## (i <= l - 3)
+	sub	eax, 2
 	cmp	DWORD PTR -10068[rbp], eax
 	jge	.L17
 	
@@ -272,8 +272,8 @@ main:
 	cmp	al, 114
 	jne	.L17
 	
-	mov	eax, DWORD PTR -10060[rbp] ## (i == l - 4)
-	sub	eax, 4
+	mov	eax, DWORD PTR -10060[rbp] ## (i == l - 3)
+	sub	eax, 3
 	cmp	DWORD PTR -10068[rbp], eax
 	je	.L19
 	
@@ -295,8 +295,8 @@ main:
 	cmp	al, 103
 	jne	.L10
 	
-	mov	eax, DWORD PTR -10060[rbp] ## (i <= l - 5)
-	sub	eax, 4
+	mov	eax, DWORD PTR -10060[rbp] ## (i <= l - 4)
+	sub	eax, 3
 	cmp	DWORD PTR -10068[rbp], eax
 	jge	.L10
 	
@@ -331,8 +331,8 @@ main:
 	cmp	al, 111
 	jne	.L10
 	
-	mov	eax, DWORD PTR -10060[rbp] ## (i == l - 5)
-	sub	eax, 5
+	mov	eax, DWORD PTR -10060[rbp] ## (i == l - 4)
+	sub	eax, 4
 	cmp	DWORD PTR -10068[rbp], eax
 	je	.L21
 	
